@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@18,47.9&family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+body {
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #FC6736;
+    font-family: "Pixelify Sans", sans-serif;
+     font: size 40px ;
+    color:#EFECEC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#seleccionar-ataque{
+
+width: 100hv;
+}
+input{
+    display: none;
+}
+.tittle {
+    font-family: "Honk", system-ui;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: navy;
+    width: 173px;
+    height: 41px ;
+    font-size: 84px;
+    margin: 16px;
+    margin-bottom: 42px;
+}
+.subtitle {
+    color: black ;
+    font-size: 32px;
+    display:flex;
+    align-items: center;
+}
+#elegir-mascota {
+    display:flex;
+    flex-direction:column ;
+    align-items:center ;
+}
+
+.tarjetas-mascotas
+{
+    background: aquamarine;
+    width: 98px;
+    height: 121px;
+    background:#0C2D57;
+    box-sizing: content-box ;
+    padding: 10px;
+    color: #EFECEC;
+    margin: 10px;
+    border-radius: 20%;
+}
+.tarjetas-mascotas:hover {
+    cursor: pointer;
+    width: 105px;
+    height: 128px;
+   background-color: #11407c; 
+}
+input:checked + label {
+ border: solid 3px #2071da;
+}
+.tarjetas-mascotas img {
+    display: flex;
+    width: 108px;
+    border-radius: 20%;
+}
+.tarjetas 
+{ 
+    display: flex
+
+}
+#boton-mascota, #boton-regresar {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 10%;
+    background-color: rgba(253, 175, 28, 0.966);
+    border: 2px solid #080808 ;
+    font-family: "Pixelify Sans", sans-serif;
+}
+#boton-mascota:hover {
+    background-color: rgba(175, 107, 28, 0.966);
+}
+
+#elegir-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: row;
+
+}
+.boton-de-ataque img {
+    width: 60px;
+    margin: 10px;
+}
+
+#boton-fuego {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    box-sizing: content-box ;
+    border-radius: 20%;
+    margin-right: 10px;
+     
+}
+#boton-agua {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    box-sizing: content-box ;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+#boton-tierra {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    box-sizing: content-box ;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+#boton-fuego img {
+    width: 60px
+}
+#Mensajes {
+    width: 300px;
+    height: 89px;
+    background-color: rgba(253, 175, 28, 0.966);
+    padding: 17px;
+    border-radius: 7%;
+    margin: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+#resultado {
+    font-size:15px;
+    display: flex;
+    font-family: "Pixelify Sans", sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#boton-reiniciar {
+    border: none;
+    color:rgba(175, 107, 28, 0.966);
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 5px;
+   
+}
+#boton-reiniciar :hover {
+    color:rgba(100, 59, 13, 0.966);   
+}
+.ataques, .Mensajes{
+
+ display: grid;
+grid-template-columns: 145px 145px;
+text-align: center;
+}
+
+#boton-regresar{
+    margin-top: 20px;
+    border-radius: 10%;
+    background-color: rgba(253, 175, 28, 0.966);
+    border: 2px solid #080808;
+    font-family: "Pixelify Sans", sans-serif;
+    align-content: flex-start ;
+     
+}
+#boton-regresar:hover {
+    background-color: rgba(175, 107, 28, 0.966);
+
+}
+@media(max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+}

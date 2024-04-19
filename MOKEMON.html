@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+   <meta  charset="utf-8" >
+  <title>¡POKEMON!</title>
+  <link rel="stylesheet" href="./diseñoM.css">
+</head>
+<body>
+  <section id="elegir-mascota">
+    <pv>
+    <h1 class="tittle">MOKEMON</h1>
+  </pv>
+      <h2 class="subtitle">Elige tu mascota</h2>
+  
+   <dv id = "contenedorTarjetas" class="tarjetas"> </dv>
+  
+    <button id="boton-mascota">Seleccionar</button>  
+  </section>
+
+     <!--segundo panel-->
+<section id="elegir-ataque">
+  <h1 class="tittle">MOKEMON</h1>
+   <!--botón regresar-->
+  
+  <h2 class="subtitle-2">Elige tu ataque</h2> <button id="boton-regresar">Regresar</button>
+      <div id="tarjetas-ataque" class="tarjetas">
+        <button id="boton-fuego" class="boton-de-ataque"> <img src="c:\Users\mendo\OneDrive\Escritorio\Programar\MOKEMON\ataques\fuego.gif">  Fuego 🔥</button>
+        <button id="boton-agua" class="boton-de-ataque"><img src="c:\Users\mendo\OneDrive\Escritorio\Programar\MOKEMON\ataques\remolino.webp">Agua 💧</button>
+       <button id="boton-tierra" class="boton-de-ataque"> <img src="c:\Users\mendo\OneDrive\Escritorio\Programar\MOKEMON\ataques\roca.gif">Tierra 🌱</button>
+    </div>
+      <div id="Mensajes"> <!--consola de ataques-->
+        <p id="resultado"> ¡Que empiece el juego!</p>
+<section id="reiniciar">
+          <button id="boton-reiniciar">Reiniciar</button>
+</section>
+      </div>
+      
+
+      <div class ="ataques"> <!--dos consolas con Grid-->
+        
+        <div class="ataques">                        
+          <p id= "mascota-Jugador"></p>
+          <p id="vidas-jugador">3</p>
+          <div id="ataquesDelJugador"></div> 
+        </div>
+
+        <div class="ataques">                        
+          <p id= "mascota-Enemigo"></p>
+          <p id="vidas-Enemigo">3</p>
+          <div id="ataquesDelEnemigo"></div> 
+        </div>
+
+</section>
+    <script  src="./JS Mokemon.js" defer></script>
+</body>
+</html>
